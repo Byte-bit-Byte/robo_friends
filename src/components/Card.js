@@ -3,10 +3,6 @@ import React, { Component } from 'react';
 
 
 class Card extends Component{
-  // constructor(props) {
-  //   super(props);
-  // }
-
   render(){
     return (
     <div className='tc bg-light-green br3 ma2 pa3 grow bw2 shadow-5 dib'>
@@ -17,6 +13,10 @@ class Card extends Component{
         <h2>{this.props.name}</h2>
         <p>{this.props.email}</p>
       </div>
+      <form className='pa2' onSubmit={this.props.handleDelete}>
+          <input name='id' type='hidden' value={this.props.id} />
+          <button type='submit' className='f5 br2 b--light-blue bg-green w-100 dim'>Remove Friend</button>
+      </form>
     </div>
   );
   }  

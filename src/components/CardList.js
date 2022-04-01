@@ -11,7 +11,8 @@ class CardList extends Component{
           key={user.id}
           id={user.id} 
           name={user.name} 
-          email={user.email} />)})
+          email={user.email} 
+          handleDelete={this.props.handleDelete}/>)})
       }
     </div>
   );
