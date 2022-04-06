@@ -1,13 +1,21 @@
 {
-  "routes": [
-    { "handle": "filesystem" },
-    {
-      "src": "/robo_friends(.*)",
-      "status": 301,
-      "headers": { "Location": "$1" }
-    }
+  "rewrites": [
+    { "source": "/robo_friends/:asset*", "destination": "/:asset*" },
+    { "source": "/(.*)", "destination": "/" }
   ]
 }
+
+
+// {
+//   "routes": [
+//     { "handle": "filesystem" },
+//     {
+//       "src": "/robo_friends(.*)",
+//       "status": 301,
+//       "headers": { "Location": "$1" }
+//     }
+//   ]
+// }
 
 
 
