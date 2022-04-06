@@ -1,8 +1,8 @@
 {
   "redirects": [
     {
-      "source": "/robo_friends/(.*)",
-      "destination": "/$1",
+      "source": "/robo_friends(.*)",
+      "destination": "$1",
       "statusCode": 301
     }
   ]

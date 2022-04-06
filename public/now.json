@@ -1,0 +1,9 @@
+{
+  "redirects": [
+    {
+      "source": "/robo_friends(.*)",
+      "destination": "$1",
+      "statusCode": 301
+    }
+  ]
+}
