@@ -3,7 +3,7 @@
   "trailingSlash": true,
   "redirects": [
     {
-      "source": "/robo_friends/(.*)",
+      "source": "/robo_friends/:path*",
       "destination": "/:path*",
       "statusCode": 200
     }
