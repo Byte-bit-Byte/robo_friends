@@ -3,9 +3,9 @@
   // "trailingSlash": false,
   "redirects": [
     {
-      "source": "/:path((?!robo_friends/).*)",
+      "source": "/robo_friends/*)",
       "destination": "/:path*",
-      "statusCode": 200
+      "permanent": true
     }
     // {
     //   "source": "/robo_friends/static/js/main.c52810a0.js",
