@@ -1,6 +1,6 @@
 {
   "rewrites": [
-    { "source": "/robo_friends/:asset*", "destination": "/:asset*" },
+    { "source": "/robofriends/:asset*", "destination": "/:asset*" },
     { "source": "/(.*)", "destination": "/" }
   ]
 }
