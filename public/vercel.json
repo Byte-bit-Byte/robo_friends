@@ -3,7 +3,7 @@
   // "trailingSlash": false,
   "redirects": [
     // {
-    //   "source": "/robo_friends/:path*",
+    //   "source": "/:path((?!robo_friends/).*)",
     //   "destination": "/:path*",
     //   "statusCode": 200
     // },
