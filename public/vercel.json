@@ -1,37 +1,18 @@
 {
-  // "cleanUrls": true,
-  // "trailingSlash": false,
-  // "redirects": [
-  //   {
-  //     "source": "/robo_friends/*)",
-  //     "destination": "/:path*",
-  //     "permanent": true
-  //   }
-  //   // {
-  //   //   "source": "/robo_friends/static/js/main.c52810a0.js",
-  //   //   "destination": "/static/js/main.c52810a0.js",
-  //   //   "statusCode": 200
-  //   // }
-  // ],
-
-  "github": {
-    "silent": true
-  },
-  "routes": [
-    { "handle": "filesystem" },
+  "redirects": [
     {
-      "src": "/robo_friends/(.+)",
-      "status": 307,
-      "headers": { "Location": "/" }
+      "source": "/index.html",
+      "destination": "https://www.google.com",
+      "permanent": true
     }
-  ]
-}
+  ],
 
-// /robo_friends/* /:splat 200
-      // "has": [
-      //   {
-      //     "type": "header",
-      //     "key": "x-vercel-ip-country",
-      //     "value": "GB"
-      //   }
-      // ],
+  // "routes": [
+  //   { "handle": "filesystem" },
+  //   {
+  //     "src": "/robo_friends/*",
+  //     "status": 307,
+  //     "headers": { "Location": "/" }
+  //   }
+  // ]
+}
