@@ -1,22 +1,27 @@
 {
   // "cleanUrls": true,
   // "trailingSlash": false,
-  "redirects": [
-    {
-      "source": "/robo_friends/*)",
-      "destination": "/:path*",
-      "permanent": true
-    }
-    // {
-    //   "source": "/robo_friends/static/js/main.c52810a0.js",
-    //   "destination": "/static/js/main.c52810a0.js",
-    //   "statusCode": 200
-    // }
-  ],
+  // "redirects": [
+  //   {
+  //     "source": "/robo_friends/*)",
+  //     "destination": "/:path*",
+  //     "permanent": true
+  //   }
+  //   // {
+  //   //   "source": "/robo_friends/static/js/main.c52810a0.js",
+  //   //   "destination": "/static/js/main.c52810a0.js",
+  //   //   "statusCode": 200
+  //   // }
+  // ],
 
   "github": {
     "silent": true
-  }
+  },
+  "routes": [
+    { "handle": "filesystem" },
+    { "src": "/github", "status": 307, "dest": "https://github.com/Crispy-Cream" },
+    { "src": "/(.*)", "status": 404, "dest": "/404.html" },
+  ]
 }
 
 // /robo_friends/* /:splat 200
