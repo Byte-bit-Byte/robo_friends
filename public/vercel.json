@@ -1,18 +1,20 @@
 {
-  "redirects": [
+  "routes": [
+    { "handle": "filesystem" },
     {
-      "source": "/robo_friends(.*)",
-      "destination": "$1",
-      "statusCode": 301
+      "src": "/robo_friends(.*)",
+      "status": 301,
+      "headers": { "Location": "$1" }
     }
   ]
 }
 
-  // "routes": [
-  //   { "handle": "filesystem" },
+
+
+  // "redirects": [
   //   {
-  //     "src": "/robo_friends/*",
-  //     "status": 307,
-  //     "headers": { "Location": "/" }
+  //     "source": "/robo_friends(.*)",
+  //     "destination": "$1",
+  //     "statusCode": 301
   //   }
   // ]
