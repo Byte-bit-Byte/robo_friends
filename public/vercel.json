@@ -1,9 +1,32 @@
 {
   "rewrites": [
-    { "source": "/robofriends/:asset*", "destination": "/:asset*" },
-    { "source": "/(.*)", "destination": "/" }
+    { "source": "/robo_friends/static/css/main.3bb8a85f.css", "destination": "/static/css/main.3bb8a85f.css" },
+    { "source": "/robo_friends/static/js/main.c52810a0.js", "destination": "/static/js/main.c52810a0.js" },
+    { "source": "/robo_friends/static/js/787.ebaa048f.chunk.js", "destination": "/static/js/787.ebaa048f.chunk.js" },
+    { "source": "/robo_friends/static/media/MNML.0b328ae1a178f2c3f75d.woff", "destination": "/static/media/MNML.0b328ae1a178f2c3f75d.woff" },
+    { "source": "/robo_friends/index.html", "destination": "/index.html" },
+    { "source": "/robo_friends/static/css/main.3bb8a85f.css.map", "destination": "/static/css/main.3bb8a85f.css.map" },
+    { "source": "/robo_friends/static/js/main.c52810a0.js.map", "destination": "/static/js/main.c52810a0.js.map" },
+    { "source": "/robo_friends/static/js/787.ebaa048f.chunk.js.map", "destination": "/static/js/787.ebaa048f.chunk.js.map" }
+
   ]
 }
+
+
+
+// { "source": "/resize/:width/:height", "destination": "/api/sharp" },
+// { "source": "/user/:id", "destination": "/api/user" },
+// {
+//   "source": "/proxy/:match*",
+//   "destination": "https://example.com/:match*"
+// }
+
+// {
+//   "rewrites": [
+//     { "source": "/robofriends/:asset*", "destination": "/:asset*" },
+//     { "source": "/(.*)", "destination": "/" }
+//   ]
+// }
 
 
 // {
@@ -18,11 +41,12 @@
 // }
 
 
-
-  // "redirects": [
-  //   {
-  //     "source": "/robo_friends(.*)",
-  //     "destination": "$1",
-  //     "statusCode": 301
-  //   }
-  // ]
+// {
+//   "redirects": [
+//     {
+//       "source": "/robo_friends(.*)",
+//       "destination": "$1",
+//       "statusCode": 301
+//     }
+//   ]
+// }
