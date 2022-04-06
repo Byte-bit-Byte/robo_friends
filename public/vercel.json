@@ -3,9 +3,9 @@
   "trailingSlash": false,
   "redirects": [
     {
-      "source": "/robo_friends/:path*",
-      "destination": "/:path*",
-      "permanent": true
+      "source": "/robo_friends/*",
+      "destination": "/:path",
+      "statusCode": 200
     }
   ]
 }
