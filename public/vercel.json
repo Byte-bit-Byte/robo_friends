@@ -1,5 +1,6 @@
 {
-  "rewrites": [
+  "public": true,
+  "redirects": [
     { "source": "/robo_friends/static/css/main.3bb8a85f.css", "destination": "/static/css/main.3bb8a85f.css" },
     { "source": "/robo_friends/static/js/main.c52810a0.js", "destination": "/static/js/main.c52810a0.js" },
     { "source": "/robo_friends/static/js/787.ebaa048f.chunk.js", "destination": "/static/js/787.ebaa048f.chunk.js" },
@@ -7,46 +8,7 @@
     { "source": "/robo_friends/index.html", "destination": "/index.html" },
     { "source": "/robo_friends/static/css/main.3bb8a85f.css.map", "destination": "/static/css/main.3bb8a85f.css.map" },
     { "source": "/robo_friends/static/js/main.c52810a0.js.map", "destination": "/static/js/main.c52810a0.js.map" },
-    { "source": "/robo_friends/static/js/787.ebaa048f.chunk.js.map", "destination": "/static/js/787.ebaa048f.chunk.js.map" }
-
+    { "source": "/robo_friends/static/js/787.ebaa048f.chunk.js.map", "destination": "/static/js/787.ebaa048f.chunk.js.map" },
+    { "source": "/view-source", "destination": "https://github.com/vercel/vercel" }
   ]
 }
-
-
-
-// { "source": "/resize/:width/:height", "destination": "/api/sharp" },
-// { "source": "/user/:id", "destination": "/api/user" },
-// {
-//   "source": "/proxy/:match*",
-//   "destination": "https://example.com/:match*"
-// }
-
-// {
-//   "rewrites": [
-//     { "source": "/robofriends/:asset*", "destination": "/:asset*" },
-//     { "source": "/(.*)", "destination": "/" }
-//   ]
-// }
-
-
-// {
-//   "routes": [
-//     { "handle": "filesystem" },
-//     {
-//       "src": "/robo_friends(.*)",
-//       "status": 301,
-//       "headers": { "Location": "$1" }
-//     }
-//   ]
-// }
-
-
-// {
-//   "redirects": [
-//     {
-//       "source": "/robo_friends(.*)",
-//       "destination": "$1",
-//       "statusCode": 301
-//     }
-//   ]
-// }
